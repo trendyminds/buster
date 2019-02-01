@@ -2,7 +2,7 @@
     "name": "trendyminds/buster",
     "description": "A control panel utility to clear just the template-based caches",
     "type": "craft-plugin",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "keywords": [
         "craft",
         "cms",
