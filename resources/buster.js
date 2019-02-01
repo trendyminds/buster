@@ -19,8 +19,6 @@ class Buster {
     const originalButtonText = this.$button.innerText;
 
     const data = {
-      action: "utilities/clear-caches-perform-action",
-      caches: ["compiled-templates", "data", "temp-files", "template-caches"],
       [window.Craft.csrfTokenName]: window.Craft.csrfTokenValue
     };
 
@@ -28,7 +26,7 @@ class Buster {
 
     $.ajax({
       type: "post",
-      url: "",
+      url: this.$button.getAttribute("href"),
       data,
       success: () => {
         this.$button.innerText = originalButtonText;
