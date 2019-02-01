@@ -1,0 +1,28 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Buster plugin for Craft CMS 3.x
+ *
+ * Buster index.twig
+ *
+ * @author    TrendyMinds
+ * @copyright Copyright (c) 2019 TrendyMinds
+ * @link      https://trendyminds.com
+ * @package   Buster
+ * @since     1.0.0
+ */
+#}
+
+{% extends "_layouts/cp" %}
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("trendyminds\\buster\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
+
+{% set title = craft.buster.pluginName %}
+
+{% set pluginCpUrl = url('buster') %}
+
+{% set content %}
+  <p>If your site data appears to be stale, try clearing the cache. This will ensure the templates and data across your site renew for all users.</p>
+  <a href="#" class="btn submit" data-buster-button>Clear Cache</a>
+{% endset %}

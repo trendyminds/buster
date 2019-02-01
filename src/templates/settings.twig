@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Buster plugin for Craft CMS 3.x
+ *
+ * Buster Settings.twig
+ *
+ * @author    TrendyMinds
+ * @copyright Copyright (c) 2019 TrendyMinds
+ * @link      https://trendyminds.com
+ * @package   Buster
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Plugin Name',
+    first: true,
+    autofocus: true,
+    instructions: 'The label of the sidebar menu item',
+    id: 'pluginName',
+    name: 'pluginName',
+    value: settings['pluginName']})
+}}

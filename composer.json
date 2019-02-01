@@ -1,0 +1,43 @@
+{
+    "name": "trendyminds/buster",
+    "description": "A control panel utility to clear just the template-based caches",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "buster"
+    ],
+    "support": {
+        "docs": "https://github.com/trendyminds/buster/blob/master/README.md",
+        "issues": "https://github.com/trendyminds/buster/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrendyMinds",
+            "homepage": "https://trendyminds.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\buster\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Buster",
+        "handle": "buster",
+        "hasCpSettings": true,
+        "hasCpSection": true,
+        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/buster/master/CHANGELOG.md",
+        "components": {
+            "busterService": "trendyminds\\buster\\services\\BusterService"
+        },
+        "class": "trendyminds\\buster\\Buster"
+    }
+}

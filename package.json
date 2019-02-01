@@ -1,0 +1,17 @@
+{
+  "name": "buster",
+  "version": "1.0.0",
+  "description": "A control panel utility to clear just the template-based caches",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel watch resources/buster.js --out-dir src/resources",
+    "build": "parcel build resources/buster.js --out-dir src/resources"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  },
+  "dependencies": {}
+}
