@@ -29,6 +29,7 @@ class Settings extends Model
      * @var string
      */
     public $pluginName = 'Buster';
+    public $authKey = '123456';
 
     // Public Methods
     // =========================================================================
@@ -41,6 +42,9 @@ class Settings extends Model
         return [
             ['pluginName', 'string'],
             ['pluginName', 'default', 'value' => 'Buster'],
+
+            ['authKey', 'string'],
+            ['authKey', 'default', 'value' => '123456'],
         ];
     }
 }

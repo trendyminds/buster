@@ -14,6 +14,7 @@ use trendyminds\buster\Buster;
 
 use Craft;
 use craft\web\Controller;
+use yii\base\Exception;
 
 /**
  * @author    TrendyMinds
@@ -31,7 +32,7 @@ class DefaultController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['index'];
+    protected $allowAnonymous = ['clear-cache'];
 
     // Public Methods
     // =========================================================================
@@ -39,10 +40,15 @@ class DefaultController extends Controller
     /**
      * @return mixed
      */
-    public function actionIndex()
+    public function actionClearCache()
     {
-        $result = 'Welcome to the DefaultController actionIndex() method';
+        if (Craft::$app->request->getParam("key") !== Buster::$plugin->getSettings()->authKey)
+        {
+            die("Your key is unauthorized or incorrect.");
+        }
 
-        return $result;
+        Craft::$app->getTemplateCaches()->deleteAllCaches();
+
+        die("The cache was cleared successfully!");
     }
 }

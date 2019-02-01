@@ -15,7 +15,7 @@
 
 {% import "_includes/forms" as forms %}
 
-{{ forms.textField({
+{{forms.textField({
     label: 'Plugin Name',
     first: true,
     autofocus: true,
@@ -23,4 +23,12 @@
     id: 'pluginName',
     name: 'pluginName',
     value: settings['pluginName']})
+}}
+
+{{forms.textField({
+    label: 'Authorization Key',
+    instructions: 'The key to pass to your URL in order to clear the cache',
+    id: 'authKey',
+    name: 'authKey',
+    value: settings['authKey']})
 }}

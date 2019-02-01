@@ -25,4 +25,10 @@
 {% set content %}
   <p>If your site data appears to be stale, try clearing the cache. This will ensure the templates and data across your site renew for all users.</p>
   <a href="#" class="btn submit" data-buster-button>Clear Cache</a>
+
+  <hr>
+
+  <h2>Clear cache with URL request</h2>
+  <p>You may also clear the cache by requesting the following URL. Feel free to bookmark this or send a GET request here after deploying changes to your site.</p>
+  <code class="Buster__url">{{siteUrl}}actions/buster/default/clear-cache?key={{craft.buster.authKey}}</code>
 {% endset %}

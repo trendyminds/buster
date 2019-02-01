@@ -25,4 +25,9 @@ class BusterVariable
     {
         return Buster::$plugin->getPluginName();
     }
+
+    public function authKey()
+    {
+        return Buster::$plugin->getSettings()->authKey;
+    }
 }
