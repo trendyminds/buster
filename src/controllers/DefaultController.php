@@ -44,7 +44,7 @@ class DefaultController extends Controller
     {
         if (Craft::$app->request->getParam("key") !== Buster::$plugin->getSettings()->authKey)
         {
-            die("Your key is unauthorized or incorrect.");
+            throw new Exception("Your key is unauthorized or incorrect.");
         }
 
         Craft::$app->getTemplateCaches()->deleteAllCaches();

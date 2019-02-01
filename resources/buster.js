@@ -29,19 +29,18 @@ class Buster {
       url: this.$button.getAttribute("href"),
       data,
       success: () => {
-        this.$button.innerText = originalButtonText;
         window.Craft.cp.displayNotice("Your cache was cleared successfully!");
-
         return true;
       },
       error: () => {
         window.Craft.cp.displayError(
           "Your cache could not be cleared successfully. Please try again later or contact support."
         );
-
         return true;
       }
     });
+
+    this.$button.innerText = originalButtonText;
   }
 }
 

@@ -1,5 +1,10 @@
 # Buster Changelog
 
+## 1.0.4 - 2019-02-01
+
+### Fixed
+- Throw exception on error so $.post responds with correct method
+
 ## 1.0.3 - 2019-02-01
 
 ### Fixed
