@@ -1,5 +1,3 @@
-import "./buster.css";
-
 class Buster {
   constructor() {
     this.$button = document.querySelector("[data-buster-button]");

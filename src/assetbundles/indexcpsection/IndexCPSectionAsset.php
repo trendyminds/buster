@@ -30,18 +30,8 @@ class IndexCPSectionAsset extends AssetBundle
     public function init()
     {
         $this->sourcePath = "@trendyminds/buster/resources";
-
-        $this->depends = [
-            CpAsset::class,
-        ];
-
-        $this->js = [
-            'buster.js',
-        ];
-
-        $this->css = [
-            'buster.css',
-        ];
+        $this->depends = [CpAsset::class];
+        $this->js = ['buster.js'];
 
         parent::init();
     }
