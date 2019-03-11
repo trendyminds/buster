@@ -1,8 +1,10 @@
 # <img src="src/icon.svg" width="35" alt="Buster"> Buster
 
-A control panel utility to clear just the template-based caches
+![Screenshot](resources/promo.png)
 
-![Screenshot](resources/screengrab.png)
+## What is Buster?
+
+Buster gives you a simple area (or URL for a GET request) to clear just the template-based caches on your Craft site. It's a safe area for you and your clients to flush old content without affecting your assets.
 
 ## Requirements
 
