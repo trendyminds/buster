@@ -1,5 +1,10 @@
 # Buster Changelog
 
+## 1.0.6 - 2019-04-05
+
+### Fixed
+- Use `actionUrl` instead of relying on `{{siteUrl}}` to generate the cache clearing URL
+
 ## 1.0.5 - 2019-02-01
 
 ### Fixed
