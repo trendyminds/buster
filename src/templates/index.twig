@@ -19,7 +19,7 @@
 {% do view.registerAssetBundle("trendyminds\\buster\\assetbundles\\indexcpsection\\IndexCPSectionAsset") %}
 
 {% set title = craft.buster.pluginName %}
-{% set clearAction = actionUrl("buster/default/clear-cache?key=#{craft.buster.authKey}") %}
+{% set clearAction = craft.app.request.getHostInfo ~ "/actions/buster/default/clear-cache?key=#{craft.buster.authKey}" %}
 
 {% set pluginCpUrl = url('buster') %}
 

@@ -1,5 +1,10 @@
 # Buster Changelog
 
+## 1.0.6.1 - 2019-04-05
+
+### Fixed
+- Use `getHostInfo` to generate URLs that can be called when logged out
+
 ## 1.0.6 - 2019-04-05
 
 ### Fixed
