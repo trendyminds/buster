@@ -48,6 +48,7 @@ class DefaultController extends Controller
         }
 
         Craft::$app->getTemplateCaches()->deleteAllCaches();
+        Craft::$app->getCache()->flush();
 
         die("The cache was cleared successfully!");
     }

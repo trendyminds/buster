@@ -1,5 +1,10 @@
 # Buster Changelog
 
+## 1.1.0 - 2019-09-09
+
+### Added
+- Plugin now flushes data caches when running
+
 ## 1.0.6.1 - 2019-04-05
 
 ### Fixed
