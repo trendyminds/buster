@@ -24,5 +24,5 @@
 
 return [
     "pluginName" => "Buster",
-    "authToken" => "123456"
+    "authKey" => "123456"
 ];
