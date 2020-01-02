@@ -3,7 +3,7 @@
 ## 1.1.1 - 2020-01-02
 
 ### Fixed
-- Use authKey instead of non existing authToken in example config file #1 (thanks, [@bjrnblm](https://github.com/bjrnblm)!)
+- Use authKey instead of non existing authToken in example config file [#1](https://github.com/trendyminds/buster/pull/1) (thanks, [@bjrnblm](https://github.com/bjrnblm)!)
 
 ## 1.1.1 - 2020-01-02
 
