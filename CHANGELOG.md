@@ -1,5 +1,10 @@
 # Buster Changelog
 
+## 1.1.1 - 2020-01-02
+
+### Changed
+- Update Node packages to address vulnerabilities provided by GitHub
+
 ## 1.1.0 - 2019-09-09
 
 ### Added
