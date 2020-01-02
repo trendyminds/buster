@@ -2,6 +2,11 @@
 
 ## 1.1.1 - 2020-01-02
 
+### Fixed
+- Use authKey instead of non existing authToken in example config file #1 (thanks, [@bjrnblm](https://github.com/bjrnblm)!)
+
+## 1.1.1 - 2020-01-02
+
 ### Changed
 - Update Node packages to address vulnerabilities provided by GitHub
 
